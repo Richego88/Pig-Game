@@ -61,7 +61,7 @@ DQS(".btn--hold").addEventListener("click", () => {
   score = 0;
   DQS(`#score--${player}`).innerText = score;
 
-  if (currentScore[player] >= 10) {
+  if (currentScore[player] >= 100) {
     DQS(".dice").classList.add("hidden");
     DQS(`.player--${player}`).classList.add("player--winner");
     DQS(`.player--${player}`).classList.remove("player--active");
